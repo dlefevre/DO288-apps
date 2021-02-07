@@ -2,7 +2,7 @@
 
 set -e
 
-source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
+source $/usr/share/container-scripts/php/common.sh
 
 echo "---> Enabling s2i support in httpd24 image"
 

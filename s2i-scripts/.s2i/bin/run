@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
+source /usr/share/container-scripts/php/common.sh
 
 export HTTPD_RUN_BY_S2I=1
 
