@@ -28,5 +28,5 @@ if [[ $HOOK_RETRIES -eq 0 ]]; then
     exit 1
 fi
 
-mysql h$MYSQL_SERVICE_HOST -P3306 -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DATABASE < /tmp/users.sql
+mysql -h$MYSQL_SERVICE_HOST -P3306 -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DATABASE < /tmp/users.sql
 
