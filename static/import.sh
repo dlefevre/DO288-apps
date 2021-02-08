@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat > /tmp/users.sql <<ENDQL
+cat > /tmp/users.sql <<ENDSQL
 CREATE TABLE IF NOT EXISTS users (
     user_id int(10) unsigned NOT NULL AUTO_INCREMENT,
     name varchar(100) NOT NULL,
