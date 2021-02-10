@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Performing S2I Build..."
+
+/usr/libexec/s2i/assemble
+rc=$?
+
+if [[ $rc -eq 0 ]]; then
+  echo "Build successful"
+else
+  echo "Build KO!"
+fi
+
+exit $?
